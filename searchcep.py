@@ -1,14 +1,23 @@
 import requests
 
 
-req = None
+def locateCEP():
+    req = None
 
-try:
-    req = requests.get(' ')
-except:
-    print('Error trying ....')
-    exit()
+    try:
+        req = requests.get(' ')
+    except:
+        print('Error trying ....')
+        exit()
 
-dictionary = json.loads(req.text)
+    dictionary = json.loads(req.text)
 
-print(dictionary)
+    print(dictionary)
+
+
+'''
+main function
+
+if __name__== "__main__":
+'''
+locateCEP()
